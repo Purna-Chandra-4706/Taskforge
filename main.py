@@ -29,7 +29,14 @@ def remove_task(task_number):
      else:
           print(f"Error: The task number does not exist\nEnter in between 1 and {len(tasks)}")
           
-        
+def count_tasks(tasks):
+
+    if(len(tasks)==0):
+        print("You have no tasks")
+    elif(len(tasks)==1):
+        print("You have 1 task")
+    else:
+        print(f"You have {len(tasks)} tasks")     
          
      
 
@@ -41,6 +48,7 @@ if __name__ =="__main__":
         add_tasks("Eat Lunch")
         add_tasks("Take Rest")
         remove_task(4)
+        count_tasks(tasks)
         
         list_tasks()
 

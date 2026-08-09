@@ -27,7 +27,7 @@ def remove_task(task_number):
           print(f"Deleted Task: {tasks[task_number-1]}")
           tasks.pop(task_number-1)
      else:
-          print(f"Error: The task number does not exist\nEnter in between 1 ans {len(tasks)}")
+          print(f"Error: The task number does not exist\nEnter in between 1 and {len(tasks)}")
           
         
          

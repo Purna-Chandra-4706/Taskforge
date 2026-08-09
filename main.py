@@ -15,7 +15,15 @@ def list_tasks():
     for index, task in enumerate(tasks,start=1):
         print(f"{index}. {task}")
 
+def add_tasks(task_name):
+     """Add a new task"""
+     tasks.append(task_name)
+     print(f"Task Added: {task_name}")
+
+
 if __name__ =="__main__":
+        add_tasks("Eat Lunch")
+        add_tasks("Take Rest")
         list_tasks()
 
 

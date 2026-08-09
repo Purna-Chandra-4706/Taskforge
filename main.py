@@ -1,4 +1,5 @@
 
+"""Taskforge - A simple CLI task manager"""
 
 tasks = [
     "Wake Up",

@@ -12,44 +12,71 @@ tasks = [
 
 def list_tasks():
     """Print each task in the last with numbered Index."""
-    print("Your Tasks:")
+    print("Your Tasks:\n")
     for index, task in enumerate(tasks,start=1):
-        print(f"{index}. {task}")
+        print(f"{index}. {task}\n")
 
 def add_tasks(task_name):
      """Add a new task"""
      tasks.append(task_name)
-     print(f"Task Added: {task_name}")
+     print(f"Task Added: {task_name}\n")
 
 def remove_task(task_number):
      """Delete a task"""
      if(1<=task_number<=len(tasks)):
-          print(f"Deleted Task: {tasks[task_number-1]}")
+          print(f"Deleted Task: {tasks[task_number-1]}\n")
           tasks.pop(task_number-1)
      else:
-          print(f"Error: The task number does not exist\nEnter in between 1 and {len(tasks)}")
+          print(f"Error: The task number does not exist\nEnter in between 1 and {len(tasks)}\n")
           
-def count_tasks(tasks):
+def count_tasks():
 
     if(len(tasks)==0):
-        print("You have no tasks")
+        print("You have no tasks\n")
     elif(len(tasks)==1):
-        print("You have 1 task")
+        print("You have 1 task\n")
     else:
-        print(f"You have {len(tasks)} tasks")     
+        print(f"You have {len(tasks)} tasks\n")     
          
      
 
+found = True
 
-     
+while(found):
+        print("=== TaskForge ===\n")
+        print("1.List tasks\n")
+        print("2.Add task\n")
+        print("3.Remove Task\n")
+        print("4.Count Task\n")
+        print("5.Exit\n")
+        n = int(input("Choose an option: "))
+        print("\n");
 
-if __name__ =="__main__":
+        match n:
+             case 1:
+                   list_tasks()
+             case 2:
+                   add_tasks(input("Enter a task: "))
+             case 3:
+                  remove_task(int(input("Enter a task number to delete: ")))
+             case 4:
+                  count_tasks()
+             case 5:
+                  print("Exiting....\n")
+                  found = False
+             case _:
+                  print("Enter a Valid choice\n") 
+                
+                  
+                  
+                  
+
         
-        add_tasks("Eat Lunch")
-        add_tasks("Take Rest")
-        remove_task(4)
-        count_tasks(tasks)
+       
         
-        list_tasks()
+        
+        
+        
+       
 
 

@@ -10,6 +10,21 @@ tasks = [
 
 ]
 
+def search_task(keyword):
+
+     
+
+     flag = False
+     for task in tasks:
+          if(keyword.lower() in task.lower()):
+               print(f"{task} is matching the {keyword} keyword\n")
+               flag = True;
+
+     if(flag==False):
+          print(f"No task found matching {keyword}\n")
+        
+     
+
 def list_tasks():
     """Print each task in the last with numbered Index."""
     print("Your Tasks:\n")
@@ -51,7 +66,8 @@ while(found):
         print("2.Add task\n")
         print("3.Remove Task\n")
         print("4.Count Task\n")
-        print("5.Exit\n")
+        print("5.Search Task\n")
+        print("6.Exit\n")
         n = int(input("Choose an option: "))
         print("\n");
 
@@ -65,6 +81,8 @@ while(found):
              case 4:
                   count_tasks()
              case 5:
+                  search_task(input("Enter the keyword: "))
+             case 6:
                   print("Exiting....\n")
                   found = False
              case _:

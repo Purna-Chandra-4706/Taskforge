@@ -51,7 +51,19 @@ def count_tasks():
     elif(len(tasks)==1):
         print("You have 1 task\n")
     else:
-        print(f"You have {len(tasks)} tasks\n")     
+        print(f"You have {len(tasks)} tasks\n") 
+
+def show_help():
+
+     print(f"\n===Menu===\n")
+     print("Choice 1: List the all tasks present\n")
+     print("Choice 2: Add a task to present tasks\n")
+     print("Choice 3: Remove a task from tasks\n")
+     print("Choice 4: Count number of tasks\n")
+     print("Choice 5: Search a task from tasks\n")
+     print("Choice 6: Helper to the user\n")
+     print("Choice 7: Exit\n")
+         
          
      
 
@@ -67,7 +79,8 @@ while(found):
         print("3.Remove Task\n")
         print("4.Count Task\n")
         print("5.Search Task\n")
-        print("6.Exit\n")
+        print("6.Menu\n")
+        print("7.Exit\n")
         n = int(input("Choose an option: "))
         print("\n");
 
@@ -83,6 +96,8 @@ while(found):
              case 5:
                   search_task(input("Enter the keyword: "))
              case 6:
+                  show_help()
+             case 7:
                   print("Exiting....\n")
                   found = False
              case _:

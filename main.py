@@ -51,9 +51,18 @@ def count_tasks():
     elif(len(tasks)==1):
         print("You have 1 task\n")
     else:
-        print(f"You have {len(tasks)} tasks\n")     
+        print(f"You have {len(tasks)} tasks\n")    
+
+
+def clear_tasks():
+
+     if(len(tasks)==0):
+          print("No tasks to clear\n")
+     else:
+          print("All tasks cleared!\n")
+          tasks.clear()
          
-     
+
 
 found = True
 
@@ -67,7 +76,8 @@ while(found):
         print("3.Remove Task\n")
         print("4.Count Task\n")
         print("5.Search Task\n")
-        print("6.Exit\n")
+        print("6.Clear Task\n")
+        print("7.Exit\n")
         n = int(input("Choose an option: "))
         print("\n");
 
@@ -83,6 +93,8 @@ while(found):
              case 5:
                   search_task(input("Enter the keyword: "))
              case 6:
+                  clear_tasks()
+             case 7:
                   print("Exiting....\n")
                   found = False
              case _:

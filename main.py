@@ -47,7 +47,6 @@ found = True
 while(found):
         print("=== TaskForge ===\n")
         print("Welcome to TaskForge! Manage your tasks efficiently.\n")
-        print("=== TaskForge ===\n")
         print("1.List tasks\n")
         print("2.Add task\n")
         print("3.Remove Task\n")

@@ -28,6 +28,7 @@ def search_task(keyword):
 def list_tasks():
     """Print each task in the last with numbered Index."""
     print("Your Tasks:\n")
+    print("---------------\n")
     for index, task in enumerate(tasks,start=1):
         print(f"{index}. {task}\n")
 

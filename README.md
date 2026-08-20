@@ -5,7 +5,7 @@ TaskForge helps in using your time efficiently and be productive and get better 
 ## Features
 
 - List tasks
--  task
+- Add task
 - Remove Task
 - Count Tasks
 - Search Task

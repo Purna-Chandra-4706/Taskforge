@@ -96,7 +96,7 @@ while(found):
         try:
           n = int(input("Choose an option: "))
           print("\n")
-        except:
+        except ValueError:
            print("\nPlease enter a valid number!\n")
            continue
            

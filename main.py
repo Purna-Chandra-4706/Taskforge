@@ -93,8 +93,13 @@ while(found):
         print("6.Clear Tasks\n")
         print("7.Show Menu\n")
         print("8.Exit\n")
-        n = int(input("Choose an option: "))
-        print("\n");
+        try:
+          n = int(input("Choose an option: "))
+          print("\n")
+        except ValueError:
+           print("\nPlease enter a valid number!\n")
+           continue
+           
 
         match n:
              case 1:

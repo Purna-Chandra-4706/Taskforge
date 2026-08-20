@@ -1,5 +1,5 @@
 
-"""Taskforge - A simple CLI task manager"""
+"""Taskforge - A powerful CLI task manager for productivity."""
 
 tasks = [
     "Wake Up",

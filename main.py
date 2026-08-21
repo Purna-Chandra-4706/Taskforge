@@ -10,6 +10,8 @@ tasks = [
 
 ]
 
+# TODO: Add priority levels(high, medium, low) to each task
+
 def search_task(keyword):
 
      

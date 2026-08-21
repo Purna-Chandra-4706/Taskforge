@@ -1,8 +1,6 @@
 
 """Taskforge - A powerful CLI task manager for productivity."""
 
-print("This is bug")
-
 tasks = [
     "Wake Up",
     "Drink Water",

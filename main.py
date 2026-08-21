@@ -81,6 +81,8 @@ def show_help():
 
 found = True
 
+# TODO: Add more features
+
 
 
 while(found):
@@ -94,6 +96,7 @@ while(found):
         print("6.Clear Tasks\n")
         print("7.Show Menu\n")
         print("8.Exit\n")
+
         try:
           n = int(input("Choose an option: "))
           print("\n")
@@ -122,6 +125,9 @@ while(found):
                   found = False
              case _:
                   print("Enter a Valid choice\n") 
+
+
+          # End of program
                 
                   
                   

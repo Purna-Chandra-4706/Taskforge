@@ -1,14 +1,9 @@
 
 """Taskforge - A powerful CLI task manager for productivity."""
 
-tasks = [
-    "Wake Up",
-    "Drink Water",
-    "Eat Breakfast",
-    "Go To lab",
-    "Commute to hostel"
+tasks = []
 
-]
+
 
 # TODO: Add priority levels(high, medium, low) to each task
 
@@ -29,10 +24,13 @@ def search_task(keyword):
 
 def list_tasks():
     """Print each task in the last with numbered Index."""
-    print("Your Tasks:\n")
-    print("---------------\n")
-    for index, task in enumerate(tasks,start=1):
-        print(f"{index}. {task}\n")
+    if len(tasks)==0:
+     print("No Tasks present.\n")
+    else:
+     print("Your Tasks:\n")
+     print("---------------\n")
+     for index, task in enumerate(tasks,start=1):
+          print(f"{index}. {task}\n")
 
 def add_tasks(task_name):
      """Add a new task"""
